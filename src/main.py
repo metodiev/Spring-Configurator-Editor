@@ -7,3 +7,6 @@ def main():
     logger.info("Starting the application")
     print("Starting the application")
     
+
+if __name__ == "__main__":
+    main()
