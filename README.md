@@ -255,44 +255,8 @@ echo $GITHUB_TOKEN
 
 ## Testing
 
-Run tests with pytest:
-```bash
-pytest
-```
-
-Run with coverage:
-```bash
-pytest --cov=src tests/
-```
-
-## Development
-
-Format code with black:
-```bash
-black src/
-```
-
-Lint with flake8:
-```bash
-flake8 src/
-```
-
-## Security
-
-- Never commit GITHUB_TOKEN to version control
-- Store token in environment variables only
-- Use minimum required token permissions
-- Rotate tokens regularly
-- Revoke unused tokens
+To be created 
 
 ## License
 
 MIT License - see LICENSE file for details
-
-## Support
-
-For issues or questions, check:
-- Log files in logs/ directory
-- GitHub token permissions
-- Service configuration in config/services_config.json
-- Repository access rights
