@@ -1,0 +1,34 @@
+{
+  "organization": "northerntrust-internal",
+  "service_groups": {
+    "config_services": {
+      "folder": "config_services",
+      "services": [
+        "apm0005996-sfc-config-service-1",
+        "apm0005996-sfc-config-service-2"
+      ]
+    },
+    "client_services": {
+      "folder": "client_services",
+      "services": [
+        "apm0005996-sfc-client-service-1",
+        "apm0005996-sfc-client-service-2"
+      ]
+    }
+  },
+  "branches": {
+    "base_branch": "main",
+    "compare_branch": "sld_oracle_to_snowflake",
+    "new_branch_prefix": "config-update"
+  },
+  "config_files": {
+    "bootstrap": "src/main/resources/bootstrap.yml",
+    "application": "src/main/resources/application.yml",
+    "pom": "pom.xml"
+  },
+  "workflow": {
+    "workflow_file": "build.yml",
+    "wait_for_completion": true,
+    "timeout_seconds": 600
+  }
+}

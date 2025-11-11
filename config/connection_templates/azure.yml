@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://azure-server.database.windows.net:1433;database=dbname
+    username: ${AZURE_USER}
+    password: ${AZURE_PASSWORD}
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: validate

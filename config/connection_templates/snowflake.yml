@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:snowflake://account.snowflakecomputing.com/?db=database&schema=schema
+    username: ${SNOWFLAKE_USER}
+    password: ${SNOWFLAKE_PASSWORD}
+    driver-class-name: net.snowflake.client.jdbc.SnowflakeDriver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
